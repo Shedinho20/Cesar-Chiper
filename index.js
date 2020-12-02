@@ -48,7 +48,6 @@ const cesar = (letter, shift) => {
 
 const cesarWord = (word, shift) => {
   let newWord = word.split("");
-  console.log(newWord);
   const cesarChiper = newWord.map((word) => {
     word = word.toLowerCase();
     if (word.match(/[a-z]/gi)) {
@@ -57,7 +56,6 @@ const cesarWord = (word, shift) => {
       return " ";
     }
   });
-  console.log(cesarChiper.join(""));
 };
 
 cesarWord("hello world", -29);
